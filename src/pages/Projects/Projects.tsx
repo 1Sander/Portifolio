@@ -4,12 +4,8 @@ import { projectsData } from "../../data/projectsData";
 
 const Projects = () => {
   return (
-    <Box
-      sx={{
-        backgroundColor: "#f8f9fa", // cor clara de fundo
-        py: 10,
-      }}
-    >
+      <Box sx={{ backgroundColor: "#f4f6f8", minHeight: "100vh", py: 10 }}>
+
       <Container maxWidth="lg">
         <Typography
           variant="h2"

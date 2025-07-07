@@ -8,18 +8,17 @@ import { AnimatedBackground } from "../../../../components/AnimatedBackground/An
 const Hero = () => {
 
     const StyledHero = styled("div")(({ theme }) => ({
-        backgroundColor: theme.palette.primary.contrastText,
-        height: "100vh",
-        display: "flex",
-        alignItems: "center",
-        [theme.breakpoints.up('xs')]: { // <= mobile
-            paddingTop: "100px",
-
-        },
-        [theme.breakpoints.up('md')]: { // >=mobile
-            paddingTop: "0",
-        }
-    }))
+    backgroundColor: theme.palette.primary.contrastText,
+    minHeight: "100vh", // <- ajustado
+    display: "flex",
+    alignItems: "center",
+    [theme.breakpoints.up("xs")]: {
+        paddingTop: "100px",
+    },
+    [theme.breakpoints.up("md")]: {
+        paddingTop: "0",
+    },
+    }));
 
     const StyledImg = styled("img")(({ theme }) => ({
         width: "75%",
@@ -47,16 +46,18 @@ const Hero = () => {
                             <Typography color="primary" variant="h2" textAlign="center" >FullStack Developer</Typography>
                             <Grid container display="flex" justifyContent="center" spacing={3} pt={3}>
                                 <Grid item xs={12} md={4} sx={{ display: "flex", justifyContent: "center" }}>
-
-                                    <StyledButton>
-                                        <DownloadIcon />
-                                        <Typography>
-                                            Download CV
-                                        </Typography>
+                                    <StyledButton
+                                    component="a"
+                                    href="/files/WallaceSanderCV.pdf"
+                                    onClick={() => console.log("CV viewed")}
+                                    >
+                                    <DownloadIcon />
+                                    <Typography>View CV</Typography>
                                     </StyledButton>
+
                                 </Grid>
                                 <Grid item xs={12} md={4} sx={{ display: "flex", justifyContent: "center" }}>
-                                    <StyledButton>
+                                    <StyledButton href="mailto:wallacesander@email.com">
                                         <MailOutlineIcon />
                                         <Typography>
                                             Contact

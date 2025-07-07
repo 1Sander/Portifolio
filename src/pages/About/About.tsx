@@ -15,7 +15,7 @@ const skills = [
 
 const About = () => {
   return (
-    <Box sx={{ backgroundColor: "#f4f6f8", py: 10 }}>
+<Box sx={{ backgroundColor: "#f4f6f8", minHeight: "100vh", py: 10 }}>
       <Container maxWidth="lg">
         <Typography
           variant="h2"
