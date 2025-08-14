@@ -45,7 +45,7 @@ const About = () => {
           {/* Texto + Skills */}
           <Grid item xs={12} md={7}>
             <Typography variant="body1" paragraph>  
-            I'm a full-stack developer focused on frontend, passionate about creating interfaces that combine functionality with clean design. I have experience with React, Unity and .NET APIs, and I enjoy working on both code and user experience.
+            I'm a full-stack developer focused on backend, passionate about creating interfaces that combine functionality with clean design. I have experience with React, Angular, SQL, Java, C#, Unity and .NET APIs, and I enjoy working on both code and user experience.
             </Typography>
 
             <Typography variant="body1" paragraph>

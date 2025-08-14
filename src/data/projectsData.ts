@@ -17,7 +17,7 @@ export const projectsData: Project[] = [
     title: "Grim Trail",
     description: "A platform 2D game developed with Unity, with a dark soundtrack theme, for Android and Web.",
     image: GrimTrailImage,
-    link: "https://play.google.com/store/apps/details?id=com.sander.grimtrail&hl=pt_BR",
+    link: "https://1sander.itch.io/grim-trail",
     stack: ["Unity", "C#", "Asesprite"],
     media: [
     "/media/grim-1.gif",
